@@ -1,4 +1,5 @@
-﻿using Fluid_Volume_Calculation.Interface;
+﻿using Fluid_Volume_Calculation.Enum;
+using Fluid_Volume_Calculation.Interface;
 
 namespace Fluid_Volume_Calculation.Models
 {
