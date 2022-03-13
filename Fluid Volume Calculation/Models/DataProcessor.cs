@@ -1,14 +1,11 @@
-﻿using Fluid_Volume_Calculation.Enum;
-using Fluid_Volume_Calculation.Interface;
-using Fluid_Volume_Calculation.Models;
+﻿using Fluid_Volume_Calculation.DataTypes;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static Fluid_Volume_Calculation.DataTypes.Enumerations;
 
-namespace Fluid_Volume_Calculation
+namespace Fluid_Volume_Calculation.Models
 {
     public class DataProcessor
     {
@@ -21,6 +18,7 @@ namespace Fluid_Volume_Calculation
 
             ReservoirDataSet reservoirData = new ReservoirDataSet(topHorizonCoordinateMatrix, new Feet(horizonDepth), new Feet(gridCellSize), new Feet(fluidContact));
             IEnumerable<IUnitOfVolume> volumes = reservoirData.EvaluateVolume();
+
             foreach (var item in volumes)
             {
                 if (item.Unit == VolumeUnit.CubicFeet)

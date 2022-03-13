@@ -1,5 +1,6 @@
 ﻿using Fluid_Volume_Calculation.Command;
 using Fluid_Volume_Calculation.Converter;
+using Fluid_Volume_Calculation.Models;
 using Fluid_Volume_Calculation.Validation;
 using Microsoft.Win32;
 using System;
@@ -110,6 +111,10 @@ namespace Fluid_Volume_Calculation.ViewModel
             }
         }
 
+        /// <summary>
+        /// Measure Estimate Volume
+        /// </summary>
+        /// <param name="obj"></param>
         private void EstimateVolumeCommandExecuted(object obj)
         {
             string filePath = Validator.ValidateFilePath(FilePath);

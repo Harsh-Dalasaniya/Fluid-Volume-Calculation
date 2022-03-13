@@ -58,12 +58,12 @@
     <Compile Include="Command\RelayCommand.cs" />
     <Compile Include="Converter\MeterToFeetConverter.cs" />
     <Compile Include="Converter\UnitConverter.cs" />
-    <Compile Include="DataProcessor.cs" />
-    <Compile Include="Enum\Enumerations.cs" />
+    <Compile Include="Models\DataProcessor.cs" />
+    <Compile Include="DataTypes\Enumerations.cs" />
+    <Compile Include="DataTypes\IUnitOfArea.cs" />
+    <Compile Include="DataTypes\IUnitOfLength.cs" />
+    <Compile Include="DataTypes\IUnitOfVolume.cs" />
     <Compile Include="Helper\ArrayHelper.cs" />
-    <Compile Include="Interface\IUnitOfArea.cs" />
-    <Compile Include="Interface\IUnitOfLength.cs" />
-    <Compile Include="Interface\IUnitOfVolume.cs" />
     <Compile Include="Models\Calculator.cs" />
     <Compile Include="Models\CubicFeet.cs" />
     <Compile Include="Models\CubicMetre.cs" />
@@ -71,7 +71,7 @@
     <Compile Include="Models\OilBarrel.cs" />
     <Compile Include="Models\SquareFeet.cs" />
     <Compile Include="Models\SquareMetre.cs" />
-    <Compile Include="ReservoirDataSet.cs" />
+    <Compile Include="Models\ReservoirDataSet.cs" />
     <Compile Include="Validation\Validator.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Page Include="MainWindow.xaml">

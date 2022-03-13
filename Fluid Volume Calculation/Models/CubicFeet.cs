@@ -1,10 +1,5 @@
-﻿using Fluid_Volume_Calculation.Enum;
-using Fluid_Volume_Calculation.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Fluid_Volume_Calculation.DataTypes;
+using static Fluid_Volume_Calculation.DataTypes.Enumerations;
 
 namespace Fluid_Volume_Calculation.Models
 {

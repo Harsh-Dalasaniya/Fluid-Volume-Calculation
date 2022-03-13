@@ -5,6 +5,11 @@ namespace Fluid_Volume_Calculation.Validation
 {
     public class Validator
     {
+        /// <summary>
+        /// Check the validation for file path
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns></returns>
         public static string ValidateFilePath(string filePath)
         {
             if (null == filePath)
@@ -13,7 +18,12 @@ namespace Fluid_Volume_Calculation.Validation
                 throw new FileNotFoundException($"Please ensure the file containing the data set for top horizon depths exist at the location [{filePath}]");
             return filePath;
         }
-
+         
+        /// <summary>
+        /// validation for decimal value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static decimal ValidateDecimal(string value)
         {
             if (null == value)

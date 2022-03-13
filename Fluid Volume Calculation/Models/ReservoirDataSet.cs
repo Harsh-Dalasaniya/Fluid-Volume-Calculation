@@ -1,14 +1,10 @@
 ﻿using Fluid_Volume_Calculation.Converter;
+using Fluid_Volume_Calculation.DataTypes;
 using Fluid_Volume_Calculation.Helper;
-using Fluid_Volume_Calculation.Interface;
-using Fluid_Volume_Calculation.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Fluid_Volume_Calculation
+namespace Fluid_Volume_Calculation.Models
 {
     public class ReservoirDataSet
     {
@@ -34,6 +30,9 @@ namespace Fluid_Volume_Calculation
             this.FluidContact = fluidContact;
         }
 
+        /// <summary>
+        /// Evaluate the final volume
+        /// </summary>
         public IEnumerable<IUnitOfVolume> EvaluateVolume()
         {
             return EvaluateVolume(this.PreciousFluidHeightMatrix);
